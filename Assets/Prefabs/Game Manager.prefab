@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9043384264640779635}
   - component: {fileID: 9043384264640779634}
+  - component: {fileID: 1014734613}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -44,3 +45,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testUI: {fileID: 0}
+  cutscene: {fileID: 1014734613}
+--- !u!320 &1014734613
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9043384264640779633}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 1b0bb078f231b9141ac4423ddfca2153, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -3156326956172936832, guid: 1b0bb078f231b9141ac4423ddfca2153, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4753466792874422088, guid: 1b0bb078f231b9141ac4423ddfca2153, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8057519778777094495, guid: 1b0bb078f231b9141ac4423ddfca2153, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4185805049884276151, guid: 1b0bb078f231b9141ac4423ddfca2153, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4746213213196216457, guid: 1b0bb078f231b9141ac4423ddfca2153, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4101411080872518394, guid: 1b0bb078f231b9141ac4423ddfca2153, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []

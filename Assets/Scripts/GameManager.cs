@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.Playables;
 
 public class GameManager : MonoBehaviour
 {
     private int objectsLeftToPlace;
     public GameObject testUI;
+    public PlayableDirector cutscene;
 
     void Start()
     {
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayScene()
     {
-        testUI.SetActive(true);
+        cutscene.Play();
+        //testUI.SetActive(true);
     }
 }
