@@ -4,12 +4,15 @@ using UnityEngine.Playables;
 public class GameManager : MonoBehaviour
 {
     private int objectsLeftToPlace;
-    public GameObject testUI;
+    public bool hasCutscene;
     public PlayableDirector cutscene;
+    [SerializeField]
+    private LevelSwitchController LSC;
 
     void Start()
     {
-        objectsLeftToPlace = FindObjectsOfType<GoalSettings>().Length;
+        objectsLeftToPlace = FindObjectsOfType<ObjectSettings>().Length;
+        LSC = GetComponentInChildren<LevelSwitchController>();
     }
 
     public void ObjectPlaced()
@@ -22,13 +25,20 @@ public class GameManager : MonoBehaviour
     {
         if (objectsLeftToPlace <= 0)
         {
-            PlayScene();
+            if (hasCutscene)
+            {
+                PlayScene();
+            }
+            else
+            {
+                LSC.NextLevel();
+            }
+                
         }
     }
 
     public void PlayScene()
     {
         cutscene.Play();
-        //testUI.SetActive(true);
     }
 }

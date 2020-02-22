@@ -10,6 +10,7 @@ public class ObjectSettings : MonoBehaviour
     private float distanceToTarget;
     private GameManager gm;
     public bool threeDim;
+    public AudioClip soundToPlay;
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class ObjectSettings : MonoBehaviour
             transform.position = goalTransform.position;
             transform.rotation = goalTransform.rotation;      
         }
+        PlayAudio();
     }
 
     void OnMouseUp()
@@ -56,5 +58,12 @@ public class ObjectSettings : MonoBehaviour
                 fo = g.ReturnFO();
             }
         }
+    }
+
+    void PlayAudio()
+    {
+        AudioSource audio = gm.GetComponent<AudioSource>();
+        audio.clip = soundToPlay;
+        audio.Play();
     }
 }

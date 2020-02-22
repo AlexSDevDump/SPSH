@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/2D Scenes/2D Test.unity
+    guid: 0115f0a8e4ba93749a348f7e6526e9a1
+  - enabled: 1
+    path: Assets/Scenes/2D Scenes/Football 2D.unity
+    guid: a81ca7da79afd6e4bb641ec19a0298bc
+  - enabled: 1
+    path: Assets/Scenes/2D Scenes/Gun.unity
+    guid: 45e870b73de4d624f96584b6f84d3d28
+  - enabled: 1
+    path: Assets/Scenes/2D Scenes/Piggy Bank.unity
+    guid: 99eadbd23cd1f104192ad1d2b345938b
   m_configObjects: {}
