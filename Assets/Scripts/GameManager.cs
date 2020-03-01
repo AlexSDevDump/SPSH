@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
         LSC = GetComponentInChildren<LevelSwitchController>();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) { Application.Quit(); }
+    }
+
     public void ObjectPlaced()
     {
         objectsLeftToPlace--;
